@@ -13,7 +13,7 @@ import cors from "cors"
 import { corsOptions } from "./config/cors.js";
 import dotenv from "dotenv";
 dotenv.config();
-const PORT=process.env.PORTBK || 3000;
+const PORT=process.env.PORT || 3000;
 const app=express();
 app.use(express.json());//Configuramos Express para manejar datos en formato JSON
 app.use(cors(corsOptions));
